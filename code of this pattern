@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int
+main ()
+{ int i,j;
+  for (i = 0; i < 5; i++)
+    {
+      int k;
+      if (i % 2 == 0)
+	    k = 1;
+      else
+	    k = 0;
+      for (j = 0; j < 5; j++)
+      {
+          if(j<=i)
+            cout<<k<<" ";
+            k=k^1;
+      }
+      cout<<endl;
+    }
+   
+	return 0;
+ }
